@@ -23,8 +23,8 @@ export class SignInComponent {
     this.services.loginUser(data).subscribe( (resp: any) => {
       console.log(resp);
       if(resp.status === true){
+        localStorage.setItem('token',resp.token)
         console.log(resp.msg);
-        
         this.toastr.success(resp.msg);
       }
     });

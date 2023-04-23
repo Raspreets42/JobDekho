@@ -32,13 +32,9 @@ export class SignUpComponent {
       console.log(resp);
       if(resp.status === true){
         console.log(resp.msg);
-        
+
         this.toastr.success(resp.msg);
       }
-      
     });
-
   }
-
-
 }

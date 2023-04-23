@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { FormsModule } from '@angular/forms';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
-    SignInComponent
+    SignInComponent,
+    ChangepasswordComponent
   ],
   imports: [
     BrowserModule,

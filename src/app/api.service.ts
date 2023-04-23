@@ -16,4 +16,8 @@ export class ApiService {
     return this.http.post('http://localhost:8090/api/login' , data);
   }
 
+  changePass(data: any){
+    return this.http.post('http://localhost:8090/api/changepassword' , data);
+  }
+
 }
